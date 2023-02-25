@@ -1,4 +1,5 @@
-# essentials
+# Vue3, Vuetify, Router, Pinia
+
 
 ## Project setup
 
