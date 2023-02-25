@@ -15,6 +15,12 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
+      {
+        path: 'about',
+        name: 'About',
+        component: () =>
+          import(/* webpackChunkName: "home" */ '@/views/About.vue'),
+      },
     ],
   },
   {
@@ -24,11 +30,14 @@ const routes = [
       {
         path: '',
         name: 'Admin',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () =>
           import(/* webpackChunkName: "home" */ '@/views/admin/Dashboard.vue'),
+      },
+      {
+        path: 'reports',
+        name: 'Reports',
+        component: () =>
+          import(/* webpackChunkName: "home" */ '@/views/admin/Reports.vue'),
       },
     ],
   },
